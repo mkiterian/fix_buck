@@ -20,3 +20,5 @@ class TestingConfig(Config):
     SQLALCHEMY_DATABASE_URI = 'postgresql://'\
         'localhost/tst_bck_fix'
 
+        
+
