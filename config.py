@@ -7,8 +7,8 @@ class Config(object):
 class DevelopmentConfig(Config):
     # SECRET_KEY = 'asdfh87sf454yhggfd45dererfds22as112'
     # SQLALCHEMY_DATABASE_URI = 'postgresql://localhost/bck_fix'
-    SECRET_KEY = os.environ['SECRET_KEY']
-    SQLALCHEMY_DATABASE_URI = os.environ['DATABASE_URL']
+    SECRET_KEY = os.getenv('SECRET_KEY')
+    SQLALCHEMY_DATABASE_URI = os.getenv('DATABASE_URL')
     # SQLALCHEMY_DATABASE_URI = 'postgres://mjpkpslhyxsugc:c96eb886222059ab00d391a4bb957cd624608e6799383e80997847770a8437fe@ec2-50-19-95-47.compute-1.amazonaws.com:5432/dfp3o42ok4g498'
     JWT_AUTH_URL_RULE = '/api/v1/auth/login'
 
